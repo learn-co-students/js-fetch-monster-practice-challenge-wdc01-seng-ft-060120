@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', event => {
     creatForm()
     getMonsters()
 
-
     forwardButton.addEventListener('click',function(event){
         displayMin += 50
         displayMax += 50
@@ -38,8 +37,6 @@ document.addEventListener('DOMContentLoaded', event => {
             let age = document.getElementById('age').value
             let description = document.getElementById('description').value
             let monsterObj = {"name": name,"age":age,"description":description}
-
-
 
             fetch(URL,{
                 method: "POST",
